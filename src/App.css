@@ -21,6 +21,14 @@ hr {
   width: 80%;
   color: #f00;
   background-color: #f00;
-  height: 5px;  
+  height: 5px;
 }
 
+.row_post {
+  width: 100%;
+  object-fit: contain;
+  max-height: 100px;
+}
+.row_promo {
+  display: flex;
+}
