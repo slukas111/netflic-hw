@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 function Row({ title }) {
   return (
     <div>
-      <h2> {title} </h2>
+      <h2>{title}</h2>
+
       {/* container/image */}
     </div>
   )
-}
+};
 
-export default Row
+export default Row;
