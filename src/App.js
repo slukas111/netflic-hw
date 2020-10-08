@@ -17,7 +17,7 @@ function App() {
       <br />
       <hr />
         <Row title="Netflix Originals" fetchUrl={requests.fetchNetflixOriginals} isSmallRow/>
-        <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
+        <Row title="Trending Now" fetchUrl={requests.fetchTrending} isMediumRow/>
         <Row title="Top Rated" fetchUrl={requests.fetchNetflixOriginals} isLargeRow/> 
 
       </header>

@@ -3,7 +3,7 @@ import axios from "./axios";
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
-function Row({ title, fetchUrl, isLargeRow, isSmallRow}) {
+function Row({ title, fetchUrl, isLargeRow, isSmallRow, isMediumRow}) {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -22,8 +22,8 @@ function Row({ title, fetchUrl, isLargeRow, isSmallRow}) {
         {movies.map((movie) => (
           <img
             key={movie.id}
-            className={`row_post ${isLargeRow && "row_postLarge"}  ${isSmallRow && "row_postSmall"}`}
-            src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
+            className={`row_post ${isLargeRow && "row_postLarge"}  ${isSmallRow && "row_postSmall"} ${isMediumRow && "row_postMedium"}`}
+            src={`${base_url}${isLargeRow ? movie.poster_path : movie.poster_path}`}
             alt={movie.name}
           />
         ))}
