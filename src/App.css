@@ -10,12 +10,20 @@
   align-items: center;
   justify-content: top;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
+}
+.Netflix-Clone {
+  text-align: center;
+  background-color: #282c34;
+  color: red;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .App-link {
   color: #61dafb;
 }
+/* red line */
 hr {
   border: 0;
   width: 80%;
@@ -23,12 +31,32 @@ hr {
   background-color: #f00;
   height: 5px;
 }
-
+/* image posters */
 .row_post {
   width: 100%;
   object-fit: contain;
   max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
 }
+
+/* hides the scroll bar */
+.row_promo::-webkit-scrollbar {
+  display: none;
+}
+/* create a scroll bar with padding */
 .row_promo {
   display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+/* hover effect for posters */
+.row_post:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+/* title row */
+.row {
+  text-align: center;
 }
